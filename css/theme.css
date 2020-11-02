@@ -279,7 +279,7 @@ h3 {
 .large-h1 {
   font-size: 42px;
   line-height: 48px;
-  font-weight: 300;
+  font-weight: 1000;
 }
 p {
   font-size: 14px;
@@ -433,6 +433,8 @@ p a,
 /*!
 // Backgrounds & Parallax
 // --------------------------------------------------*/
+
+
 .background-image-holder {
   position: absolute;
   width: 100%;
@@ -1540,7 +1542,7 @@ a:hover {
   position: relative;
   padding: 216px 0px;
 }
-.gallery-header .logo {
+.header .logo {
   max-width: 400px;
   display: block;
   margin: 0px auto;
@@ -2672,7 +2674,7 @@ header p {
 .timeline-img-4 {
   width: 30px;
   height: 30px;
-  background: #994a98;
+  background: #e44f7f;
   border-radius: 50%;
   position: absolute;
   left: 50%;
@@ -2683,7 +2685,7 @@ header p {
 .timeline-img-5 {
   width: 30px;
   height: 30px;
-  background: #1e96cd;
+  background: #884c9d;
   border-radius: 50%;
   position: absolute;
   left: 50%;
@@ -2694,7 +2696,7 @@ header p {
 .timeline-img-6 {
   width: 30px;
   height: 30px;
-  background: #3ab4c7;
+  background: #3974bb;
   border-radius: 50%;
   position: absolute;
   left: 50%;
@@ -2705,7 +2707,7 @@ header p {
 .timeline-img-7 {
   width: 30px;
   height: 30px;
-  background: #4dc6b7;
+  background: #23a6d5;
   border-radius: 50%;
   position: absolute;
   left: 50%;
@@ -2713,6 +2715,27 @@ header p {
   margin-left: -15px;
 }
 
+.timeline-img-8 {
+  width: 30px;
+  height: 30px;
+  background: #37b2c9;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  margin-top: 25px;
+  margin-left: -15px;
+}
+
+.timeline-img-9 {
+  width: 30px;
+  height: 30px;
+  background: #4dc7b7;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  margin-top: 25px;
+  margin-left: -15px;
+}
 /* a {
   background: #3F51B5;
   color: #FFFFFF;
@@ -2910,13 +2933,13 @@ blockquote {
   font-family: "Courier New", Courier, monospace;
   letter-spacing: 4px;
 }
-
+/* 
 body {
 	position: relative;
   background: linear-gradient(-70deg, #ebe5e5, #f8f6fa);
   background-size: 200% 200%;
   animation: animateGlow 10s ease infinite;
-}
+} */
 
 
 @keyframes animateGlow {
@@ -2930,3 +2953,83 @@ body {
     background-position: 0% 50%;
   }
 }
+
+@import url('https://fonts.googleapis.com/css?family=Caveat:400,700|Gochi+Hand');
+
+.heading-animate{
+  font-size: 4em;
+  /* font-family: 'Caveat', cursive; */
+}
+
+.heading-animate span{
+  display: block;
+  float: left;
+  animation: animate 2.25s linear infinite;
+  margin: 0 5px;
+  padding: 0;
+  position: relative;
+  color: #111;
+}
+
+.heading-animate span:nth-child(1){
+  animation-delay: 0s;
+}
+.heading-animate span:nth-child(2){
+  animation-delay: .25s;
+}
+.heading-animate span:nth-child(2){
+  animation-delay: .5s;
+}
+.heading-animate span:nth-child(3){
+  animation-delay: .75s;
+}
+.heading-animate span:nth-child(4){
+  animation-delay: 1s;
+}
+.heading-animate span:nth-child(5){
+  animation-delay: 1.25s;
+}
+.heading-animate span:nth-child(6){
+  animation-delay: 1.5s;
+}
+.heading-animate span:nth-child(7){
+  animation-delay: 1.75s;
+}
+
+.heading-animate span:nth-child(8){
+  animation-delay: 2.00s;
+}
+
+.heading-animate span:nth-child(9){
+  animation-delay: 2.25s;
+}
+
+.heading-animate span:nth-child(10){
+  animation-delay: 2.30s;
+}
+
+
+
+
+
+@keyframes animate {
+  0%, 100%{
+    color: #fff;
+    filter: blur(2px);
+    text-shadow: 0 0 10px #00bbff,
+      0 0 20px #00bbff,
+      0 0 40px #00bbff,
+      0 0 80px #00bbff,
+      0 0 120px #00bbff,
+      0 0 200px #00bbff,
+      0 0 300px #00bbff,
+      0 0 400px #00bbff;
+  }
+  5%, 95%{
+    color: rgb(226, 213, 213);
+    filter: blur(0px);
+    text-shadow: none;
+  }
+}
+
+
