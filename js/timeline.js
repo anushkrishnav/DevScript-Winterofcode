@@ -49,4 +49,6 @@ $(function(){
   
   
   });
+
+AOS.init();
   
