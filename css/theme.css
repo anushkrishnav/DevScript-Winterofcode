@@ -104,6 +104,9 @@ nav {
   right: 0;
   margin: 0 auto;
 }
+.nav-container{
+  font-size: larger;
+}
 .no-loader .loader {
   display: none !important;
 }
@@ -2969,6 +2972,8 @@ body {
   padding: 0;
   position: relative;
   color: #111;
+  height: max-content;
+  width: max-contentFinner;
 }
 
 .heading-animate span:nth-child(1){
