@@ -2874,6 +2874,16 @@ blockquote {
   border-radius: 5px;
   box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.05), 0 1px 5px 0 rgba(0, 0, 0, 0.05);
   cursor: grab;
+  }
+
+  .general-sponsor .sponsors-logo {
+    height: 150px;
+    display: flex;
+    align-items: center;
+  } 
+
+.sponsors-logo:hover, .sponsors-logo img:hover .sponsors-logo{
+  box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.1), 0 2px 7px 0 rgba(0, 0, 0, 0.1);
 }
 
 .sponsors-logo:hover {
@@ -2894,6 +2904,10 @@ blockquote {
 
 .general-sponsor img {
   width: 60%;
+}
+
+.general-sponsor {
+  justify-content: center;
 }
 
 .past-sponsor img {
@@ -3510,4 +3524,8 @@ body {
   to {
     text-shadow: 0 0 6px rgba(228, 202, 225, 0.98), 0 0 30px rgba(228, 202, 226, 0.42), 0 0 12px rgba(242, 30, 242, 0.58), 0 0 22px rgba(242, 30, 231, 0.84), 0 0 38px rgba(242, 30, 196, 0.88), 0 0 60px #f21ee7;
   }
+}
+
+.fa-telegram::before {
+  content: "\f2c6"
 }
