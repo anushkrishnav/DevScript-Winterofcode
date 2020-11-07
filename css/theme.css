@@ -2579,15 +2579,15 @@ header p {
 }
 
 @keyframes gradient-line {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .timeline-item {
@@ -2851,7 +2851,7 @@ blockquote {
   background-color: #f9fafc;
 }
 
-.sponsor-heading {
+.sponsor-heading, .sponsor-start {
   font-size: 25px;
   font-weight: 700;
   font-family: Montserrat, sans-serif;
@@ -2860,6 +2860,11 @@ blockquote {
   justify-content: center;
   margin: 50px 0px 30px 0;
   text-transform: uppercase;
+}
+
+.sponsor-start {
+  font-size: 38px;
+  color: #169797;
 }
 
 .sponsors-logo {
@@ -2895,15 +2900,15 @@ blockquote {
 }
 
 .gold-sponsor img {
-  width: 70%;
+  /*width: 70%;*/
 }
 
 .silver-sponsor img {
-  width: 70%;
+  /*width: 70%;*/
 }
 
 .general-sponsor img {
-  width: 60%;
+  /*width: 50%;*/
 }
 
 .general-sponsor {
@@ -2953,7 +2958,7 @@ blockquote {
 }
 /* 
 body {
-	position: relative;
+  position: relative;
   background: linear-gradient(-70deg, #ebe5e5, #f8f6fa);
   background-size: 200% 200%;
   animation: animateGlow 10s ease infinite;
