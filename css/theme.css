@@ -1785,10 +1785,11 @@ a:hover {
 /*!
 // Frequently Asked Questions
 // --------------------------------------------------*/
-/* 
+
 .faq {
   background-image: linear-gradient(to bottom right, #333333, gray);
-} */
+}
+
 
 .faq .section-title h2,
 .faq .section-title p {
@@ -3543,14 +3544,14 @@ body {
   bottom:0;
   left:-50%;
   opacity:.5;
-  position:fixed;
+  position: fixed;
   right:-50%;
-  top:0;
   z-index:-1;
+  top: 0;
 }
 
 .bg2 {
-  animation-direction:alternate-reverse;
+  animation-direction: alternate-reverse;
   animation-duration:4s;
 }
 
