@@ -3144,7 +3144,7 @@ body {
   background-image: url(https://img.icons8.com/fluent/64/000000/project-management.png);
   background-size: 80px;
   background-position: 
-  75px 50px;
+  center;
   background-repeat: no-repeat;
   animation-name: floating; 
     animation-duration: 3s; 
@@ -3162,7 +3162,7 @@ body {
 .card:nth-child(2):before {
   background-image: url(https://img.icons8.com/bubbles/64/000000/manager.png);
   background-size: 80px;
-  background-position: 75px 50px;
+  background-position: center;
   background-repeat: no-repeat;
   animation-name: floating; 
     animation-duration: 3s; 
@@ -3172,7 +3172,7 @@ body {
 .card:nth-child(3):before {
   background-image: url(https://img.icons8.com/nolan/64/coach.png);
   background-size: 80px;
-  background-position: 75px 50px;
+  background-position: center;
   background-repeat: no-repeat;
   animation-name: floating; 
     animation-duration: 3s; 
@@ -3182,7 +3182,7 @@ body {
 .card:nth-child(4):before {
   background-image: url(https://img.icons8.com/dusk/64/000000/students.png);
   background-size: 80px;
-  background-position: 75px 50px;
+  background-position: center;
   background-repeat: no-repeat;
   animation-name: floating; 
     animation-duration: 3s; 
@@ -3234,8 +3234,8 @@ body {
   font-weight: bold;
   letter-spacing: 0.025rem;
   text-transform: uppercase;
-  color: white;
-  background-color: black;
+  color: black;
+  background-color: white;
   border: none;
 }
 .btn:hover {
