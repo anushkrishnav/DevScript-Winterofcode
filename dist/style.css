@@ -7237,7 +7237,7 @@ html {
  */
 .animated-button {
   background: linear-gradient(-30deg, #0b1b3d 50%, #08142b 50%);
-  padding: 0px 0px;
+  padding: 10px 10px;
   margin: 0px;
   display: inline-block;
   -webkit-transform: translate(0%, 0%);
@@ -7408,8 +7408,8 @@ html {
 
 .animated-button1 {
   background: linear-gradient(-30deg, #3d0b0b 50%, #2b0808 50%);
-  padding: 20px 40px;
-  margin: 12px;
+  padding: 10px 10px;
+  margin: 10px;
   display: inline-block;
   -webkit-transform: translate(0%, 0%);
           transform: translate(0%, 0%);
