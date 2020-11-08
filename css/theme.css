@@ -3104,7 +3104,7 @@ body {
 }
 @media (min-width: 600px) {
   .card {
-    height: 220px;
+    height: 250px;
   }
 }
 .card:before {
@@ -3143,13 +3143,12 @@ body {
 .card:nth-child(1):before {
   background-image: url(https://img.icons8.com/fluent/64/000000/project-management.png);
   background-size: 80px;
-  background-position: 
-  center;
+  background-position: center;
   background-repeat: no-repeat;
   animation-name: floating; 
     animation-duration: 3s; 
     animation-iteration-count: infinite; 
-    animation-timing-function: ease-in-out; 
+    animation-timing-function: ease-in-out;
 
 }
 
@@ -3221,9 +3220,9 @@ body {
 
 .copy {
   font-family: var(--font-serif);
-  font-size: 1.125rem;
+  font-size: 15px;
   font-style: italic;
-  line-height: 1.35;
+
 }
 
 .btn {
