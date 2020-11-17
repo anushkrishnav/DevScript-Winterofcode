@@ -40,45 +40,7 @@ $(document).ready(function() {
         $('nav').toggleClass('open-menu');
     });
 
-    // Sidebar menu toggle
-
-    $('.sidebar-menu-toggle').click(function() {
-        if ($('.instagram-sidebar').hasClass('show-sidebar')) {
-            $('.instagram-sidebar').toggleClass('show-sidebar');
-            $('.sidebar-menu').toggleClass('show-sidebar');
-        } else {
-            $('.sidebar-menu').toggleClass('show-sidebar');
-            $('.main-container').toggleClass('reveal-sidebar');
-            $('nav .container').toggleClass('reveal-sidebar');
-        }
-    });
-
-    $('.instagram-toggle').click(function() {
-        if ($('.sidebar-menu').hasClass('show-sidebar')) {
-            $('.sidebar-menu').toggleClass('show-sidebar');
-            $('.instagram-sidebar').toggleClass('show-sidebar');
-        } else {
-            $('.instagram-sidebar').toggleClass('show-sidebar');
-            $('.main-container').toggleClass('reveal-sidebar');
-            $('nav .container').toggleClass('reveal-sidebar');
-        }
-    });
-
-    $('.main-container').click(function() {
-        if ($('.sidebar-menu').hasClass('show-sidebar')) {
-            $('.sidebar-menu').toggleClass('show-sidebar');
-            $('.main-container').toggleClass('reveal-sidebar');
-            $('nav .container').toggleClass('reveal-sidebar');
-        }
-
-        if ($('.instagram-sidebar').hasClass('show-sidebar')) {
-            $('.instagram-sidebar').toggleClass('show-sidebar');
-            $('.main-container').toggleClass('reveal-sidebar');
-            $('nav .container').toggleClass('reveal-sidebar');
-        }
-    });
-
-    /************** Slider Scripts **************/
+  /************** Slider Scripts **************/
 
     $('.hero-slider').flexslider({
         directionNav: false
