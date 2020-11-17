@@ -1,6 +1,7 @@
 $(document).ready(function() {
 
 	"use strict";
+    $('#preloader').css('display', 'none');
 
     /************** Nav Scripts **************/
 
@@ -334,26 +335,3 @@ $(window).load(function() {
         return false;
     }
 });
-
-// preloader
-
-$(document).ready(function() {
-
-preloaderFadeOutTime = 500;
-function hidePreloader() {
-var preloader = $('.pre-loader');
-preloader.fadeOut(preloaderFadeOutTime);
-console.log("Working");
-}
-hidePreloader();
-});
-
-// $(window).on("load", function () {
-//     if ($(".pre-loader").length) {
-//       $(".pre-loader")
-//         .delay(100)
-//         .fadeOut("slow", function () {
-//           $(this).remove();
-//         });
-//     }
-//   });
