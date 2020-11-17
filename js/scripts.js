@@ -3,6 +3,15 @@ $(document).ready(function() {
 	"use strict";
     $('#preloader').css('display', 'none');
 
+    if($(window).width() < 768) {
+        $('.logo')[0].src = './img/WOC-logo.png'
+        $('.woc-badge')[0].style.opacity = '0'
+    }
+    if($(window).width() > 768) {
+        $('.logo')[0].src = './img/logo.png'
+        $('.woc-badge')[0].style.opacity = '1'
+    }
+
     /************** Nav Scripts **************/
 
     $(window).scroll(function() {
