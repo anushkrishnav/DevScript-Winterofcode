@@ -197,7 +197,6 @@ $(document).ready(function() {
         }
         return false;
     });
-
 });
 
 $(window).load(function() {
@@ -306,3 +305,65 @@ $(window).load(function() {
         return false;
     }
 });
+
+document.querySelector('#register_form').addEventListener('submit', event => {
+    event.preventDefault();
+
+    const register_data = { 
+        name: document.querySelector('#name').value , 
+        email: document.querySelector('#email').value , 
+        mobile_number: document.querySelector('#mobile_number').value ,
+        city: document.querySelector('#city').value ,
+        state: document.querySelector('#state').value ,
+        college: document.querySelector('#college').value ,
+        branch: document.querySelector('#branch').value ,
+        year: document.querySelector('#year').value ,
+        github_id: document.querySelector('#github_id').value , }
+
+
+    document.querySelector('#register_form').style.display = 'none'
+    document.querySelector('#verify_otp').style.display = 'block'
+    
+    // register(register_data);
+});
+
+document.querySelector('#verify_otp').addEventListener('submit', event => {
+    event.preventDefault();
+
+    const verify_data = { 
+        email: document.querySelector('#email').value , 
+        otp: document.querySelector('#otp').value , }
+
+    // verify_otp(verify_data);
+});
+
+
+/* Registration form */
+function register(register_data) {
+    const email_addr =  document.querySelector('#email').value 
+    
+    axios.post('http://f4d3abeadb69.ngrok.io/api/accounts/devscript/register_account', register_data)
+        .then(response => {
+            console.log(response.data);
+        })
+        .catch(error => console.error(error));
+
+}
+
+
+function verify_otp(verify_data) {
+
+    axios.post('http://f4d3abeadb69.ngrok.io/api/accounts/devscript/verify_otp', verify_data)
+    .then(response => {
+        console.log(response.data);
+    })
+    .catch(error => console.error(error));
+}
+
+function showParticipantForm() {
+  document.getElementById("participant_register").style.display = "block";
+}
+
+function hideParticipantForm() {
+  document.getElementById("participant_register").style.display = "none";
+}
