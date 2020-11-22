@@ -340,14 +340,8 @@
         <div class="content">
           <h2 class="title" style="font-family: 'Raleway', sans-serif;
           ">VOLUNTEER</h2>
-<<<<<<< HEAD
           <p class="copy">Registrations are OPEN! Hurry Up!</p>
-          <button class="btn" disabled>Register Now</button>
-=======
-          <p class="copy">OPENING SOON!</p>
           <a href="https://bit.ly/Ds_Volunteer" target="_blank"><button class="btn">Register Now</button></a>
-
->>>>>>> 6e6e8081e487708bc0cad8e5d5e9b16f5ad68af2
         </div>
       </div>
       <div class="card" data-aos="fade-down" data-aos-delay="0.2s">
@@ -375,11 +369,11 @@
           <form method='POST' class="form-group form-event-inner mx-auto" id='register_form'>
             <a class="close" onclick="hideParticipantForm()">&times;</a>
             <h4 class="text-center event-form-heading">Register</h4>
-              <input type="text" id='name' required class="form-control event-form-main"  placeholder="Full Name" />
+              <input type="text" id='name'  class="form-control event-form-main"  placeholder="Full Name" />
               <br />
-              <input type="email" id='email' required class="form-control event-form-main event-form-main"  placeholder="Email ID" />
+              <input type="email" id='email'  class="form-control event-form-main event-form-main"  placeholder="Email ID" />
               <br />
-              <input type="text" id='mobile_number' required class="form-control event-form-main"  placeholder="Mobile Number" maxLength="16" />
+              <input type="text" id='mobile_number'  class="form-control event-form-main"  placeholder="Mobile Number" maxLength="16" />
               <br />
               <div class="row no-gutters">
                   <div class="col-md-6 col-12">
@@ -498,12 +492,12 @@
                       </select>
                   </div>
                   <div class="col-md-6 col-12">
-                      <input type="text" id='city' required class="form-control event-form-main"  placeholder="Your City" />
+                      <input type="text" id='city'  class="form-control event-form-main"  placeholder="Your City" />
                   </div>
               </div>
               <br />
 
-              <input type="text" id='college' required class="form-control event-form-main"  placeholder="College Name" />
+              <input type="text" id='college'  class="form-control event-form-main"  placeholder="College Name" />
               <br />
               <div class="row no-gutters">
                   <div class="col-md-6 col-12">
@@ -516,11 +510,11 @@
                       </select>
                   </div>
                   <div class="col-md-6 col-12">
-                      <input type="text" id='branch' required class="form-control event-form-main"  placeholder="Branch" />
+                      <input type="text" id='branch'  class="form-control event-form-main"  placeholder="Branch" />
                   </div>
               </div>
               <br />
-              <input type="text" id='github_id' required class="form-control event-form-main"  placeholder="Github ID" />
+              <input type="text" id='github_id'  class="form-control event-form-main"  placeholder="Github ID" />
               <br />
               <div class="row mx-auto text-center">
                 <p class="otp-warning">*OTP will be sent to your email.</p>
@@ -530,7 +524,7 @@
           <form method='POST' class="form-group form-event-inner mx-auto" id='verify_otp'>
         <a class="close" onclick="hideParticipantForm()">&times;</a>
             <div>
-              <input type="text" required class="form-control event-form-main" maxLength="4" pattern="[0-9]*"  placeholder="OTP" />
+              <input type="text" id='otp' class="form-control event-form-main" maxLength="4" pattern="[0-9]*"  placeholder="OTP" />
               <br />
               <p class="otp-warning">
                   *Please check your email for the OTP.
@@ -540,6 +534,7 @@
               </button>
             </div>
           </form>
+          <h1 class='otp_confirm'> Thanks for registering. Let the Oh1enSource be with You</p>
         </div>
       </div>
     </div>

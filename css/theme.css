@@ -3827,3 +3827,9 @@ body {
 #verify_otp {
   display: none;
 }
+
+.otp_confirm {
+  display: none;
+  padding-top: 50px;
+    text-align: center;
+}
