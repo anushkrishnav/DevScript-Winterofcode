@@ -82,6 +82,10 @@
   margin: 15px 42px 0 0;
   color: #ffffff;
 }
+.footer-down {
+  text-align: center;
+  height: 30px;
+}
 *:after, *:before {
     size: 34px;
 }
