@@ -2918,6 +2918,10 @@ blockquote {
   justify-content: center;
 }
 
+.silver-sponsor {
+  align-items: center;
+}
+
 .past-sponsor img {
   width: 80%;
 }
