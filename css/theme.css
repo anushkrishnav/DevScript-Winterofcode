@@ -3839,7 +3839,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  color: #000;
+  color: #fff;
   -ms-transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
