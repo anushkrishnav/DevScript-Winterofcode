@@ -3741,7 +3741,8 @@ body {
     text-align: center;
     font-weight: 700;
     margin-top: 2rem;
-    font-size: 3rem;
+    font-size: 2.5rem;
+    line-height: 1;
 }
 
 
@@ -3899,6 +3900,10 @@ body {
   margin-top: 25px;
 }
 
+.contrast {
+  filter: invert(1);
+}
+
 .flip-box-button {
   background-color: transparent;
   border: 2px solid #fff;
@@ -3937,30 +3942,63 @@ form p{
 
 
 /* counter */
-.counter { 
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
-  background-color: #ffffff; 
-  padding: 20px 0; 
-  border-radius: 5px;
+
+
+
+.count:after {
+  content: " ";
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 110px solid transparent;
+  border-bottom: 110px solid transparent;
+  position: absolute;
+  top: 0;
+  left: 98.5%;
+  z-index: 2;
 }
-.count-title { 
-  font-size: 40px; 
-  font-weight: normal; 
-  margin-top: 10px; 
-  margin-bottom: 0; 
-  text-align: center; }
-.count-text { 
-  font-size: 13px; 
-  font-weight: normal;  
-  margin-top: 10px; 
-  margin-bottom: 0; 
-  text-align: center; 
+.count-1 {
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 233, 238);
 }
-.fa-2x { 
-  margin: 0 auto; 
-  float: none; 
-  display: table; 
-  color: #4ad1e5; 
+.count-1:after {
+  border-left: 25px solid rgb(255, 233, 238);
+  filter: drop-shadow(8px 0px 4px red);
+}
+.count-2 {
+  color: rgb(74, 0, 224);
+  background-color: aliceblue;
+}
+/*rgb(255 244 140)*/
+.count-2:after {
+  border-left: 25px solid aliceblue;
+  filter: drop-shadow(8px 0 4px red);
+}
+.count-3 {
+  color: rgb(255, 94, 132);
+  background-color: rgb(255, 244, 140);
+}
+.count-3:after {
+  border-left: 25px solid rgb(255, 244, 140);
+  filter: drop-shadow(8px 0 4px red);
+}
+.count-4 {
+  color: rgb(89, 244, 178);
+  background-color: rgb(237, 255, 247);
+}
+.count-4:after {
+  border-left: 25px solid rgb(237, 255, 247);
+  filter: drop-shadow(8px 0 4px red);
+}
+.count-5 {
+  color: rgb(255, 215, 0);
+  background-color: rgb(255, 252, 235);
+}
+.count-5:after {
+  border-left: 25px solid rgb(255, 252, 235);
+  filter: drop-shadow(8px 0 4px red);
+}
+
+.end:after {
+  border: none !important ;
 }
