@@ -1,10 +1,71 @@
+$(document).ready(function() {
+	"use strict";
+
+	$(window).scroll(function() {
+        if ($(window).scrollTop() > 1) {
+            $('nav').addClass('sticky-nav');
+        } else {
+            $('nav').removeClass('sticky-nav');
+        }
+    });
+
+    $('a').click(function() {
+        if ($(this).attr('href') === '#') {
+            return false;
+        }
+    });
+
+    // Margin on the menu to make room for sidebar menu if it exists
+
+    if ($('.sidebar-menu-toggle').length && !$('.sidebar-menu-toggle i').hasClass('variant-deleted-mrv')) {
+        $('nav').find('.menu').css('margin-right', 32);
+    }
+
+    // Mobile menu toggle
+
+    $('.mobile-menu-toggle').click(function() {
+        $('nav').toggleClass('open-menu');
+    });
+});
+
 projects = [{
+  desc: "Appwrite is a secure end-to-end backend server for Web, Mobile, and Flutter developers that is packaged as a set of Docker containers for easy deployment 🚀",
+  forks: 544,
+  img: "https://avatars0.githubusercontent.com/u/25003669?v=4",
+  name: "appwrite",
+  owner: "appwrite",
+  stars: 3758,
+  type: "Organization",
+  url: "https://github.com/appwrite/appwrite"
+},
+{
+  desc: "Platform for building serverless applications and APIs (Node.js, React, GraphQL)",
+  forks: 297,
+  img: "https://avatars2.githubusercontent.com/u/3808429?v=4",
+  name: "webiny-js",
+  owner: "webiny",
+  stars: 3753,
+  type: "Organization",
+  url: "https://github.com/webiny/webiny-js"
+},
+{
+  desc: "The open source Discord bot that solves all of your problems.",
+  forks: 189,
+  img: "https://avatars2.githubusercontent.com/u/39246832?v=4",
+  name: "switchblade",
+  owner: "SwitchbladeBot",
+  stars: 247,
+  type: "Organization",
+  url: "https://github.com/SwitchbladeBot/switchblade"
+},
+{
   desc: "Face Mask Detection system based on computer vision and deep learning using OpenCV and Tensorflow/Keras",
-  forks: 243,
+  forks: 247,
   img: "https://avatars2.githubusercontent.com/u/29686102?v=4",
   name: "Face-Mask-Detection",
   owner: "chandrikadeb7",
-  stars: 549,
+  stars: 558,
+  type: "User",
   url: "https://github.com/chandrikadeb7/Face-Mask-Detection"
 },
 {
@@ -14,6 +75,7 @@ projects = [{
   name: "Portfolio-App-Template",
   owner: "Abhijit2505",
   stars: 4,
+  type: "User",
   url: "https://github.com/Abhijit2505/Portfolio-App-Template"
 },
 {
@@ -23,34 +85,8 @@ projects = [{
   name: "Grokking-Machine-Learning",
   owner: "Abhijit2505",
   stars: 1,
+  type: "User",
   url: "https://github.com/Abhijit2505/Grokking-Machine-Learning"
-},
-{
-  desc: "The open source Discord bot that solves all of your problems.",
-  forks: 188,
-  img: "https://avatars2.githubusercontent.com/u/39246832?v=4",
-  name: "switchblade",
-  owner: "SwitchbladeBot",
-  stars: 247,
-  url: "https://github.com/SwitchbladeBot/switchblade"
-},
-{
-  desc: "Appwrite is a secure end-to-end backend server for Web, Mobile, and Flutter developers that is packaged as a set of Docker containers for easy deployment 🚀",
-  forks: 545,
-  img: "https://avatars0.githubusercontent.com/u/25003669?v=4",
-  name: "appwrite",
-  owner: "appwrite",
-  stars: 3747,
-  url: "https://github.com/appwrite/appwrite"
-},
-{
-  desc: "Platform for building serverless applications and APIs (Node.js, React, GraphQL)",
-  forks: 298,
-  img: "https://avatars2.githubusercontent.com/u/3808429?v=4",
-  name: "webiny-js",
-  owner: "webiny",
-  stars: 3739,
-  url: "https://github.com/webiny/webiny-js"
 },
 {
   desc: "MDN's Local Library with a whole lot of features (in development)",
@@ -59,16 +95,28 @@ projects = [{
   name: "express-locallibrary-tutorial",
   owner: "Zircoz",
   stars: 1,
+  type: "User",
   url: "https://github.com/Zircoz/express-locallibrary-tutorial"
 },
 {
   desc: "Blogger is a basic blogging application which includes user to create an account and post their views.",
-  forks: 42,
+  forks: 45,
   img: "https://avatars3.githubusercontent.com/u/54139847?v=4",
   name: "Blogger",
   owner: "harsh-9in",
   stars: 18,
+  type: "User",
   url: "https://github.com/harsh-9in/Blogger"
+},
+{
+  desc: "a simple yet powerful package manager",
+  forks: 2,
+  img: "https://avatars2.githubusercontent.com/u/72333447?v=4",
+  name: "appctl",
+  owner: "releax",
+  stars: 1,
+  type: "Organization",
+  url: "https://github.com/releax/appctl"
 },
 {
   desc: "Bringing all Quantum Algorithms under one Roof ⚡",
@@ -77,15 +125,17 @@ projects = [{
   name: "QPowerAlgo",
   owner: "QPower-Research",
   stars: 4,
+  type: "Organization",
   url: "https://github.com/QPower-Research/QPowerAlgo"
 },
 {
   desc: "A real-time remote service to get the Keras callbacks to the telegram including the details of metrics--&gt;pip install tensorgram",
-  forks: 0,
+  forks: 1,
   img: "https://avatars1.githubusercontent.com/u/46109386?v=4",
   name: "TensorGram",
   owner: "ksdkamesh99",
-  stars: 14,
+  stars: 37,
+  type: "User",
   url: "https://github.com/ksdkamesh99/TensorGram"
 },
 {
@@ -95,6 +145,7 @@ projects = [{
   name: "Blinker",
   owner: "wayiam",
   stars: 0,
+  type: "User",
   url: "https://github.com/wayiam/Blinker"
 },
 {
@@ -104,6 +155,7 @@ projects = [{
   name: "AIes_object_detection",
   owner: "Akashsindhu",
   stars: 0,
+  type: "User",
   url: "https://github.com/Akashsindhu/AIes_object_detection"
 },
 {
@@ -113,6 +165,7 @@ projects = [{
   name: "Cheat-Sheets",
   owner: "VedantKhairnar",
   stars: 19,
+  type: "User",
   url: "https://github.com/VedantKhairnar/Cheat-Sheets"
 }]
 projects.forEach(data => {
@@ -132,7 +185,7 @@ project_repo_info_fork = document.createElement('div')
 
 project_card.classList.add('project-card')
 project_image.classList.add('project-image')
-project_image_link.classList.add('w-100')
+project_image_link.classList.add('h-100')
 project_body.classList.add('project-body')
 project_owner.classList.add('project-owner')
 project_tags.classList.add('project-tags')
@@ -144,7 +197,7 @@ project_repo_info_fork.classList.add('repo-info')
 
 project_image.appendChild(project_image_link)
 
-// project_card.appendChild(project_image)
+project_card.appendChild(project_image)
 project_card.appendChild(project_body)
 project_card.appendChild(project_footer)
 
@@ -161,17 +214,21 @@ project_footer_row.appendChild(project_repo_info_star)
 project_footer_row.appendChild(project_repo_info_fork)
 
 project_grid = document.querySelector('.project-grid')
-
-	project_image_link.src = data.img
+	
+	if(data.type == 'User') {
+		project_image_link.src = './img/github-user.png'
+	} else {
+		project_image_link.src = data.img
+	}
 	project_owner.innerHTML = data.author
 	project_tags = 'Tags'
 	project_link.innerHTML = data.name;
 	project_link.href = data.url;
-	console.log(data.desc)
+	// console.log(data.desc)
 	project_desc.innerHTML = data.desc;
 	project_repo_info_star.innerHTML = '<i class="fas fa-star"></i>' + data.stars
 	project_repo_info_fork.innerHTML = '<i class="fas fa-code-branch"></i>' + data.forks
-	console.log(project_card)
+	// console.log(project_card)
 	project_grid.appendChild(project_card)
 
 	console.log(data)
